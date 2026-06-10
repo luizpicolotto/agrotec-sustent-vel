@@ -1,4 +1,4 @@
-// Formulário de contato simples
+/ Formulário de contato simples
 const form = document.getElementById('contactForm');
 const formMsg = document.getElementById('formMsg');
 
@@ -17,3 +17,21 @@ form.addEventListener('submit', function(e) {
         formMsg.style.color = "red";
     }
 });
+
+// Header muda cor ao scroll
+const header = document.querySelector('header');
+window.addEventListener('scroll', () => {
+    if(window.scrollY > 50){
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
+// Fade-in ao scroll
+const faders = document.querySelectorAll('.fade-section');
+const cards = document.querySelectorAll('.card');
+
+const appearOptions = {
+    threshold: 0.2,
+    rootMargin: "0
