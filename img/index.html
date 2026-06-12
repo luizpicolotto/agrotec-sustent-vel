@@ -3,43 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Práticas Sustentáveis na Plantação de Uva</title>
+    <title>Plantação de Uvas Sustentável</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Práticas Sustentáveis na Plantação de Uva</h1>
-        <p>Aprenda como cultivar uvas de forma responsável com o meio ambiente.</p>
-    </header>
 
-    <main>
-        <section class="cards-container">
-            <div class="card" onclick="toggleCard(this)">
-                <h2>Irrigação Inteligente</h2>
-                <p class="card-content">Use sistemas de irrigação por gotejamento para economizar água e reduzir o desperdício.</p>
+<header>
+    <h1>🍇 Práticas Sustentáveis na Plantação de Uvas</h1>
+    <p>Tecnologias e métodos para uma produção mais sustentável.</p>
+</header>
+
+<div class="container">
+
+    <div class="cards">
+
+        <div class="card" onclick="abrirCard(this)">
+            <h2>💧 Irrigação Inteligente</h2>
+            <div class="info">
+                Utiliza sensores e irrigação por gotejamento para reduzir o consumo de água e aumentar a eficiência.
             </div>
+        </div>
 
-            <div class="card" onclick="toggleCard(this)">
-                <h2>Controle Natural de Pragas</h2>
-                <p class="card-content">Adote insetos benéficos e plantas companheiras para manter pragas sob controle sem químicos.</p>
+        <div class="card" onclick="abrirCard(this)">
+            <h2>🐞 Controle Biológico</h2>
+            <div class="info">
+                Uso de predadores naturais para combater pragas sem necessidade de pesticidas agressivos.
             </div>
+        </div>
 
-            <div class="card" onclick="toggleCard(this)">
-                <h2>Compostagem</h2>
-                <p class="card-content">Transforme resíduos vegetais em adubo orgânico, enriquecendo o solo e reduzindo impactos ambientais.</p>
+        <div class="card" onclick="abrirCard(this)">
+            <h2>🌱 Compostagem</h2>
+            <div class="info">
+                Aproveitamento de resíduos orgânicos para produzir adubo natural e melhorar a fertilidade do solo.
             </div>
+        </div>
 
-            <div class="card" onclick="toggleCard(this)">
-                <h2>Variedades Resilientes</h2>
-                <p class="card-content">Plante variedades de uvas adaptadas ao clima local, diminuindo a necessidade de insumos artificiais.</p>
+        <div class="card" onclick="abrirCard(this)">
+            <h2>☀️ Energia Renovável</h2>
+            <div class="info">
+                Uso de painéis solares para alimentar sistemas de irrigação e equipamentos agrícolas.
             </div>
-        </section>
-    </main>
+        </div>
 
-    <footer>
-        <p>&copy; 2026 Plantação Sustentável de Uvas</p>
-    </footer>
+    </div>
 
-    <script src="script.js"></script>
+    <button class="botao" onclick="mostrarDica()">
+        Gerar Dica Sustentável
+    </button>
+
+    <div class="resultado" id="resultado"></div>
+
+</div>
+
+<footer>
+    <p>© 2026 - Agricultura Sustentável de Uvas</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
