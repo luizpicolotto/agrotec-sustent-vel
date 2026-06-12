@@ -1,70 +1,45 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro Forte - Futuro Sustentável</title>
+    <title>Práticas Sustentáveis na Plantação de Uva</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="logo">Agro Forte</div>
-        <nav>
-            <ul>
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#sobre" class="nav-link">Sobre</a></li>
-                <li><a href="#projetos" class="nav-link">Projetos</a></li>
-                <li><a href="#contato" class="nav-link">Contato</a></li>
-            </ul>
-        </nav>
+        <h1>Práticas Sustentáveis na Plantação de Uva</h1>
+        <p>Aprenda como cultivar uvas de forma responsável com o meio ambiente.</p>
     </header>
 
-    <section id="home" class="hero">
-        <h1 class="fade-in">Agro Forte</h1>
-        <p class="fade-in delay-1">Construindo um futuro sustentável no campo e na cidade.</p>
-        <a href="#sobre" class="btn fade-in delay-2">Saiba Mais</a>
-    </section>
-
-    <section id="sobre" class="fade-section">
-        <h2>Sobre Nós</h2>
-        <p>Somos uma iniciativa dedicada a promover práticas agrícolas sustentáveis, combinando tecnologia, inovação e responsabilidade ambiental para garantir um futuro próspero.</p>
-    </section>
-
-    <section id="projetos" class="fade-section">
-        <h2>Nossos Projetos</h2>
-        <div class="cards">
-            <div class="card">
-                <h3>AgroTech Sustentável</h3>
-                <p>Uso de tecnologias inteligentes para otimizar o cultivo e reduzir impactos ambientais.</p>
+    <main>
+        <section class="cards-container">
+            <div class="card" onclick="toggleCard(this)">
+                <h2>Irrigação Inteligente</h2>
+                <p class="card-content">Use sistemas de irrigação por gotejamento para economizar água e reduzir o desperdício.</p>
             </div>
-            <div class="card">
-                <h3>Energia Renovável</h3>
-                <p>Implementação de painéis solares e biogás para reduzir emissões e custos.</p>
-            </div>
-            <div class="card">
-                <h3>Comunidade Verde</h3>
-                <p>Educação e capacitação de produtores locais para práticas agroecológicas.</p>
-            </div>
-        </div>
-    </section>
 
-    <section id="contato" class="fade-section">
-        <h2>Contato</h2>
-        <form id="contactForm">
-            <input type="text" name="nome" placeholder="Seu nome" required>
-            <input type="email" name="email" placeholder="Seu email" required>
-            <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-        <p id="formMsg"></p>
-    </section>
+            <div class="card" onclick="toggleCard(this)">
+                <h2>Controle Natural de Pragas</h2>
+                <p class="card-content">Adote insetos benéficos e plantas companheiras para manter pragas sob controle sem químicos.</p>
+            </div>
+
+            <div class="card" onclick="toggleCard(this)">
+                <h2>Compostagem</h2>
+                <p class="card-content">Transforme resíduos vegetais em adubo orgânico, enriquecendo o solo e reduzindo impactos ambientais.</p>
+            </div>
+
+            <div class="card" onclick="toggleCard(this)">
+                <h2>Variedades Resilientes</h2>
+                <p class="card-content">Plante variedades de uvas adaptadas ao clima local, diminuindo a necessidade de insumos artificiais.</p>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2026 Agro Forte - Todos os direitos reservados.</p>
+        <p>&copy; 2026 Plantação Sustentável de Uvas</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-
-   
